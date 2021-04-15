@@ -1,46 +1,48 @@
+#!/usr/bin/env bash
+
 ##################################################
 # CentOS
 ##################################################
-CENTOS_MAJOR="7"
-CENTOS_MINOR="8"
-CENTOS_STAMP="2003"
-CENTOS_FULL="${CENTOS_MAJOR}.${CENTOS_MINOR}.${CENTOS_STAMP}"
-CENTOS_ARCH="x86_64"
-CENTOS_STYLE="DVD"
-CENTOS_ISO="CentOS-${CENTOS_MAJOR}-${CENTOS_ARCH}-${CENTOS_STYLE}-${CENTOS_STAMP}.iso"
-CENTOS_ISO_NO_EXT="CentOS-${CENTOS_MAJOR}-${CENTOS_ARCH}-${CENTOS_STYLE}-${CENTOS_STAMP}"
+export CENTOS_MAJOR="7"
+export CENTOS_MINOR="8"
+export CENTOS_STAMP="2003"
+export CENTOS_FULL="${CENTOS_MAJOR}.${CENTOS_MINOR}.${CENTOS_STAMP}"
+export CENTOS_ARCH="x86_64"
+export CENTOS_STYLE="DVD"
+export CENTOS_ISO="CentOS-${CENTOS_MAJOR}-${CENTOS_ARCH}-${CENTOS_STYLE}-${CENTOS_STAMP}.iso"
+export CENTOS_ISO_NO_EXT="CentOS-${CENTOS_MAJOR}-${CENTOS_ARCH}-${CENTOS_STYLE}-${CENTOS_STAMP}"
 
-CENTOS_MIRROR="https://vault.centos.org"
-CENTOS_CHECKSUM="sha256sum.txt.asc"
-CENTOS_GPG_KEY="RPM-GPG-KEY-CentOS-${CENTOS_MAJOR}"
-CENTOS_GPG_KEY_EXPECTED_ID="F4A80EB5" # https://www.centos.org/keys/#centos-7-signing-key
+export CENTOS_MIRROR="https://vault.centos.org"
+export CENTOS_CHECKSUM="sha256sum.txt.asc"
+export CENTOS_GPG_KEY="RPM-GPG-KEY-CentOS-${CENTOS_MAJOR}"
+export CENTOS_GPG_KEY_EXPECTED_ID="F4A80EB5" # https://www.centos.org/keys/#centos-7-signing-key
 
-CENTOS_DL_ISO="${CENTOS_MIRROR}/${CENTOS_FULL}/isos/${CENTOS_ARCH}/${CENTOS_ISO}"
-CENTOS_DL_CHECKSUM="${CENTOS_MIRROR}/${CENTOS_FULL}/isos/${CENTOS_ARCH}/${CENTOS_CHECKSUM}"
-CENTOS_DL_GPG_KEY="${CENTOS_MIRROR}/${CENTOS_GPG_KEY}"
+export CENTOS_DL_ISO="${CENTOS_MIRROR}/${CENTOS_FULL}/isos/${CENTOS_ARCH}/${CENTOS_ISO}"
+export CENTOS_DL_CHECKSUM="${CENTOS_MIRROR}/${CENTOS_FULL}/isos/${CENTOS_ARCH}/${CENTOS_CHECKSUM}"
+export CENTOS_DL_GPG_KEY="${CENTOS_MIRROR}/${CENTOS_GPG_KEY}"
 
 ##################################################
 # Red Hat
 ##################################################
-RHEL_UBI="8"
+export RHEL_UBI="8"
 
 ##################################################
 # Ansible
 ##################################################
-ANSIBLE_VERSION="2.9.18"
-ANSIBLE_TOWER_CLI_VERSION="3.3.9"
-ANSIBLE_AWX_VERSION="17.1.0"
-ANSIBLE_AWX_REDIS_VERSION="6.2.1"
+export ANSIBLE_VERSION="2.9.18"
+export ANSIBLE_TOWER_CLI_VERSION="3.3.9"
+export ANSIBLE_AWX_VERSION="17.1.0"
+export ANSIBLE_AWX_REDIS_VERSION="6.2.1"
 
 ##################################################
 # Docker
 ##################################################
-CONTAINER_CENTOS_BASE_IMAGE="docker.io/centos:${CENTOS_FULL}"
-CONTAINER_RHEL_UBI_BASE_IMAGE="registry.access.redhat.com/ubi${RHEL_UBI}"
+export CONTAINER_CENTOS_BASE_IMAGE="docker.io/centos:${CENTOS_FULL}"
+export CONTAINER_RHEL_UBI_BASE_IMAGE="registry.access.redhat.com/ubi${RHEL_UBI}"
 
 ##################################################
 # Kubernetes
 ##################################################
-ACP_KUBERNETES_VERSION="1.17.9"
-UKHOMEOFFICE_KD_VERSION="1.18.0"
-HELM_VERSION="3.5.4"
+export ACP_KUBERNETES_VERSION="1.17.9"
+export UKHOMEOFFICE_KD_VERSION="1.18.0"
+export HELM_VERSION="3.5.4"
