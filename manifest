@@ -39,7 +39,7 @@ export ANSIBLE_AWX_REDIS_VERSION="6.2.1"
 ##################################################
 export CONTAINER_CENTOS_BASE_IMAGE="docker.io/centos:${CENTOS_FULL}"
 export CONTAINER_RHEL_UBI_BASE_IMAGE="registry.access.redhat.com/ubi${RHEL_UBI}"
-export CONTAINER_CBA_BASE_VERSION="0.0.3"
+export CONTAINER_CBA_BASE_VERSION="202104.01"
 
 ##################################################
 # Kubernetes
